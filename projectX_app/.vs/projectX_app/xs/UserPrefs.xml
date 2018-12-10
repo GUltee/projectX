@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}|Default">
-  <MonoDevelop.Ide.ItemProperties.projectX__app.Android FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="projectX_app/Views/MainPage.xaml">
+  <MonoDevelop.Ide.ItemProperties.projectX__app.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_Pie" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="projectX_app/ViewModels/AboutViewModel.cs">
     <Files>
-      <File FileName="projectX_app/Views/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="projectX_app/Views/MainPage.xaml.cs" Line="12" Column="6" />
       <File FileName="projectX_app/Views/MainPage.xaml" Line="18" Column="20" />
+      <File FileName="projectX_app/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="projectX_app.iOS/Main.cs" Line="16" Column="40" />
+      <File FileName="projectX_app.iOS/Resources/LaunchScreen.storyboard" />
+      <File FileName="projectX_app/Models/HomeMenuItem.cs" Line="1" Column="1" />
+      <File FileName="projectX_app/ViewModels/AboutViewModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.projectX__app.iOS FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.projectX__app FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
