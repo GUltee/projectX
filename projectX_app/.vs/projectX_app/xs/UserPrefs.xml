@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{C8E97042-F730-4E25-921A-0D67329D355E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="projectX_app/App.xaml.cs">
+    <Files>
+      <File FileName="projectX_app/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="projectX_app/Views/AboutPage.xaml" Line="66" Column="22" />
+      <File FileName="projectX_app/Views/MainPage.xaml" Line="20" Column="20" />
+      <File FileName="projectX_app.iOS/MyViewController.cs" Line="12" Column="9" />
+      <File FileName="projectX_app.iOS/Main.cs" Line="16" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="projectX_app" expanded="True">
+            <Node name="projectX_app" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AboutPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="projectX_app.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.projectX__app.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.91BA5F1F-4C80-40FF-A4EC-0229DD34AD6D" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
