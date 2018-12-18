@@ -97,6 +97,14 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="Scripts\d3\README.md" />
+    <None Include="Scripts\d3\LICENSE" />
+    <None Include="Scripts\d3\d3.min.js" />
+    <None Include="Scripts\d3\d3.js" />
+    <None Include="Scripts\d3\CHANGES.md" />
+    <None Include="Scripts\d3\API.md" />
+    <None Include="packages.config" />
+    <None Include="Scripts\Chart.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -105,6 +113,47 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="onboardingview.cs" />
+    <Compile Include="onboardingview.designer.cs">
+      <DependentUpon>onboardingview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onboarding1.cs" />
+    <Compile Include="onboarding1.designer.cs">
+      <DependentUpon>onboarding1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onboarding2.cs" />
+    <Compile Include="onboarding2.designer.cs">
+      <DependentUpon>onboarding2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onboarding3.cs" />
+    <Compile Include="onboarding3.designer.cs">
+      <DependentUpon>onboarding3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onboarding4.cs" />
+    <Compile Include="onboarding4.designer.cs">
+      <DependentUpon>onboarding4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data_view.cs" />
+    <Compile Include="data_view.designer.cs">
+      <DependentUpon>data_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PieChartView.cs" />
+    <Compile Include="PieChartView.designer.cs">
+      <DependentUpon>PieChartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reflection.cs" />
+    <Compile Include="reflection.designer.cs">
+      <DependentUpon>reflection.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\onboard.png" />
+    <BundleResource Include="Resources\3tool.png" />
+    <BundleResource Include="Resources\sunny.png" />
+    <BundleResource Include="Resources\understand.png" />
+    <BundleResource Include="Resources\helping.png" />
+    <BundleResource Include="Resources\charts.png" />
+    <BundleResource Include="Resources\superhero.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

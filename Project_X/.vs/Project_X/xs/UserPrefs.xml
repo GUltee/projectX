@@ -1,16 +1,21 @@
 ﻿<Properties StartupConfiguration="{EBE88DED-06FC-43D6-8510-FE0038A95FBE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Project_X/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Project_X/Main.cs">
     <Files>
-      <File FileName="Project_X/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Project_X/LaunchScreen.storyboard" />
-      <File FileName="Project_X/ViewController.cs" Line="9" Column="39" />
-      <File FileName="Project_X/ViewController.designer.cs" Line="20" Column="14" />
-      <File FileName="Project_X/Main.storyboard" Line="1" Column="1" />
+      <File FileName="Project_X/onboarding2.cs" Line="1" Column="1" />
+      <File FileName="Project_X/onboarding4.cs" Line="18" Column="2" />
+      <File FileName="Project_X/reflection.cs" Line="8" Column="6" />
+      <File FileName="Project_X/data_view.designer.cs" Line="23" Column="42" />
+      <File FileName="Project_X/ViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="Project_X/Main.storyboard" />
+      <File FileName="Project_X/onboarding2.designer.cs" Line="1" Column="1" />
+      <File FileName="Project_X/onboarding3.designer.cs" Line="1" Column="1" />
+      <File FileName="Project_X/onboarding1.cs" Line="15" Column="2" />
+      <File FileName="Project_X/Main.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.ItemProperties.Project__X FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.38702D69-5E51-4CDE-9326-52D08AA172CA">
+  <MonoDevelop.Ide.ItemProperties.Project__X PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5D6D82A0-33D7-4AE6-B91F-57F60553A3A7">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.Project__X>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

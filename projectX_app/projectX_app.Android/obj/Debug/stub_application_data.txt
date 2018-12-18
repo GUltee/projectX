@@ -1,0 +1,2 @@
+android.app.Application
+X_Fours.projectX_app
