@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3566" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                        <rect key="frame" x="91" y="31" width="154" height="21"/>
+                                        <rect key="frame" x="91" y="62" width="154" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
                                         <nil key="textColor"/>
@@ -198,7 +198,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17" weight="medium"/>
                                         <state key="normal" title="BACK"/>
-                                        <connections/>
+                                        <connections>
+                                            <segue id="12997" destination="3869" kind="show"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="4030" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Using your (NAME) gather data about yourself throughout the day. ">
                                         <rect key="frame" x="51" y="299" width="234" height="71"/>
@@ -257,6 +259,7 @@
                                         <state key="normal" title="BACK"/>
                                         <connections>
                                             <action selector="UIButton3969_TouchUpInside:" destination="3999" id="3998" eventType="touchUpInside"/>
+                                            <segue id="13045" destination="3926" kind="show"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Understand in the home." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4054" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -322,6 +325,7 @@
                                         <connections>
                                             <action selector="UIButton3969_TouchUpInside:" destination="4284" id="4283" eventType="touchUpInside"/>
                                             <action selector="UIButton4282_TouchUpInside:" destination="4273" id="4336" eventType="touchUpInside"/>
+                                            <segue id="13105" destination="3981" kind="show"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help without having to ask." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4285" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -377,8 +381,7 @@
                                         <connections>
                                             <action selector="UIButton3996_TouchUpInside:" destination="4341" id="4340" eventType="touchUpInside"/>
                                             <action selector="UIButton4279_TouchUpInside:" destination="4343" id="4342" eventType="touchUpInside"/>
-                                            <action selector="UIButton4339_TouchUpInside:" destination="4332" id="4456" eventType="touchUpInside"/>
-                                            <segue id="11815" destination="5216" kind="show"/>
+                                            <segue id="13622" destination="13430" kind="show"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4344" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -389,46 +392,47 @@
                                             <action selector="UIButton3969_TouchUpInside:" destination="4346" id="4345" eventType="touchUpInside"/>
                                             <action selector="UIButton4282_TouchUpInside:" destination="4343" id="4347" eventType="touchUpInside"/>
                                             <action selector="UIButton4344_TouchUpInside:" destination="4332" id="4350" eventType="touchUpInside"/>
+                                            <segue id="13658" destination="13430" kind="show"/>
                                         </connections>
                                         <state key="normal" title="SKIP"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Care Line" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4361" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                        <rect key="frame" x="86" y="61" width="154" height="21"/>
+                                        <rect key="frame" x="86" y="31" width="154" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" minimumFontSize="17" id="4362" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
-                                        <rect key="frame" x="88" y="162" width="160" height="30"/>
+                                        <rect key="frame" x="88" y="112" width="160" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" minimumFontSize="17" id="4363" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                        <rect key="frame" x="88" y="212" width="160" height="30"/>
+                                        <rect key="frame" x="88" y="162" width="160" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4364" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Phone Number">
-                                        <rect key="frame" x="88" y="262" width="160" height="30"/>
+                                        <rect key="frame" x="88" y="212" width="160" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="tel"/>
                                     </textField>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" maxValue="1" id="4457" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                        <rect key="frame" x="104" y="350" width="118" height="31"/>
+                                        <rect key="frame" x="104" y="300" width="118" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="Up:" destination="4332" id="4479" eventType="touchDragInside"/>
                                         </connections>
                                     </slider>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="4468" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Sharing Level">
-                                        <rect key="frame" x="112" y="310" width="102" height="32"/>
+                                        <rect key="frame" x="112" y="260" width="102" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -441,6 +445,11 @@
                                         <connections>
                                             <action selector="Buddy_button_TouchUpInside:" destination="4332" id="5478" eventType="touchUpInside"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13335" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                        <rect key="frame" x="122" y="350" width="82" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Submit"/>
                                     </button>
                                 </subviews>
                             </view>
@@ -455,6 +464,7 @@
                         <outlet property="bluebox" destination="4333" id="name-outlet-4333"/>
                         <outlet property="slider" destination="4457" id="name-outlet-4457"/>
                         <outlet property="buddy_button" destination="5401" id="name-outlet-5401"/>
+                        <outlet property="submit" destination="13335" id="name-outlet-13335"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4334" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -613,19 +623,19 @@
                             <constraint id="4672" firstItem="4552" firstAttribute="width" secondItem="4493" secondAttribute="width"/>
                             <constraint id="4673" firstItem="4555" firstAttribute="width" secondItem="4493" secondAttribute="width"/>
                             <constraint id="4674" firstItem="4558" firstAttribute="width" secondItem="4493" secondAttribute="width"/>
-                            <constraint id="5040" firstItem="4493" firstAttribute="leading" secondItem="4396" secondAttribute="leading" constant="10"/>
+                            <constraint id="5040" firstItem="4493" firstAttribute="leading" secondItem="4525" secondAttribute="leading" constant="10"/>
                             <constraint id="5041" firstItem="4493" firstAttribute="top" secondItem="4396" secondAttribute="top" constant="58"/>
-                            <constraint id="5043" firstItem="4543" firstAttribute="leading" secondItem="4396" secondAttribute="leading" constant="73"/>
+                            <constraint id="5043" firstItem="4543" firstAttribute="leading" secondItem="4525" secondAttribute="leading" constant="73"/>
                             <constraint id="5044" firstItem="4543" firstAttribute="top" secondItem="4396" secondAttribute="top" constant="58"/>
-                            <constraint id="5046" firstItem="4546" firstAttribute="leading" secondItem="4396" secondAttribute="leading" constant="127"/>
+                            <constraint id="5046" firstItem="4546" firstAttribute="leading" secondItem="4525" secondAttribute="leading" constant="127"/>
                             <constraint id="5047" firstItem="4546" firstAttribute="top" secondItem="4396" secondAttribute="top" constant="58"/>
-                            <constraint id="5049" firstItem="4396" firstAttribute="trailing" secondItem="4549" secondAttribute="trailing" constant="183"/>
+                            <constraint id="5049" firstItem="4525" firstAttribute="trailing" secondItem="4549" secondAttribute="trailing" constant="183"/>
                             <constraint id="5050" firstItem="4549" firstAttribute="top" secondItem="4396" secondAttribute="top" constant="58"/>
-                            <constraint id="5052" firstItem="4396" firstAttribute="trailing" secondItem="4552" secondAttribute="trailing" constant="113"/>
+                            <constraint id="5052" firstItem="4525" firstAttribute="trailing" secondItem="4552" secondAttribute="trailing" constant="113"/>
                             <constraint id="5053" firstItem="4552" firstAttribute="top" secondItem="4396" secondAttribute="top" constant="58"/>
-                            <constraint id="5055" firstItem="4396" firstAttribute="trailing" secondItem="4555" secondAttribute="trailing" constant="59"/>
+                            <constraint id="5055" firstItem="4525" firstAttribute="trailing" secondItem="4555" secondAttribute="trailing" constant="59"/>
                             <constraint id="5056" firstItem="4555" firstAttribute="top" secondItem="4396" secondAttribute="top" constant="58"/>
-                            <constraint id="5058" firstItem="4396" firstAttribute="trailing" secondItem="4558" secondAttribute="trailing" constant="5"/>
+                            <constraint id="5058" firstItem="4525" firstAttribute="trailing" secondItem="4558" secondAttribute="trailing" constant="5"/>
                             <constraint id="5059" firstItem="4558" firstAttribute="top" secondItem="4396" secondAttribute="top" constant="58"/>
                         </constraints>
                     </view>
@@ -636,7 +646,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4397" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="780"/>
+            <point key="canvasLocation" x="1357" y="777"/>
         </scene>
         <scene sceneID="5215">
             <objects>
@@ -680,7 +690,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5218" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933" y="782"/>
+            <point key="canvasLocation" x="1810" y="773"/>
+        </scene>
+        <scene sceneID="13429">
+            <objects>
+                <viewController id="13430" sceneMemberID="viewController" customClass="finished">
+                    <view key="view" contentMode="scaleToFill" id="13431">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.6470588235294118" green="0.82745098039215681" blue="1" alpha="1"/>
+                        <viewLayoutGuide key="safeArea" id="13428"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="13528" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="39" y="116" width="336" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13529" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                        <rect key="frame" x="80" y="452" width="176" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17" weight="medium"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.82352941176470584" green="0.85098039215686272" blue="0.8784313725490196" alpha="1"/>
+                                        <state key="normal" title="FINISH"/>
+                                        <connections>
+                                            <action selector="UIButton3996_TouchUpInside:" destination="13531" id="13530" eventType="touchUpInside"/>
+                                            <action selector="UIButton4279_TouchUpInside:" destination="13533" id="13532" eventType="touchUpInside"/>
+                                            <segue id="14203" destination="13754" kind="show"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="13554" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="success.png">
+                                        <rect key="frame" x="34" y="96" width="269" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have successfully set up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13555" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                        <rect key="frame" x="40" y="263" width="255" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17" weight="heavy"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13432" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477" y="767"/>
+        </scene>
+        <scene sceneID="13753">
+            <objects>
+                <viewController id="13754" sceneMemberID="viewController" customClass="no_data">
+                    <view key="view" contentMode="scaleToFill" id="13755">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.615686274509804" green="0.81960784313725488" blue="1" alpha="1"/>
+                        <viewLayoutGuide key="safeArea" id="13752"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="14587" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="3" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Data" id="14588"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="14589" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="DF">
+                                <rect key="frame" x="10" y="155" width="395" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="14590" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="NO DATA TO DISPLAY">
+                                <rect key="frame" x="108" y="178" width="197" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.76078431372549016" green="0.82745098039215681" blue="0.93333333333333335" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17" weight="black"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14684" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="142" y="496" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.82352941176470584" green="0.85098039215686272" blue="0.8784313725490196" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
+                                <state key="normal" title="LOAD DATA"/>
+                                <connections>
+                                    <segue id="15060" destination="4395" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13756" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="779"/>
         </scene>
     </scenes>
     <resources>
@@ -689,5 +789,6 @@
         <image name="helping.png" width="700" height="700"/>
         <image name="charts.png" width="358" height="295"/>
         <image name="superhero.png" width="700" height="700"/>
+        <image name="success.png" width="700" height="700"/>
     </resources>
 </document>
